@@ -1,0 +1,411 @@
+{
+	"info": {
+		"_postman_id": "2216a811-5804-41dd-965a-03265d852ad6",
+		"name": "deepchain-kotlin/param",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[Send param] Party B",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"param\": \"I'm Party B. This is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param.\",\n\t\"groupId\": \"0192f7cb-874e-4610-a9a4-8cad120f0574\",\n\t\"totalLen\": 2,\n\t\"offset\": 0\n}"
+				},
+				"url": {
+					"raw": "localhost:10010/api/param/send-param",
+					"host": [
+						"localhost"
+					],
+					"port": "10010",
+					"path": [
+						"api",
+						"param",
+						"send-param"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Query param]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:10013/api/param/vault?groupId=9395e9ad-1615-4760-9cfb-b959ad8f1510&page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10013",
+					"path": [
+						"api",
+						"param",
+						"vault"
+					],
+					"query": [
+						{
+							"key": "groupId",
+							"value": "9395e9ad-1615-4760-9cfb-b959ad8f1510"
+						},
+						{
+							"key": "pageSize",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Send param] Party B-2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"param\": \"I'm Party BBBBB. This is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param.\",\n\t\"groupId\": \"0192f7cb-874e-4610-a9a4-8cad120f0574\",\n\t\"totalLen\": 2,\n\t\"offset\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:10010/api/param/send-param",
+					"host": [
+						"localhost"
+					],
+					"port": "10010",
+					"path": [
+						"api",
+						"param",
+						"send-param"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Send param] Party A",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"param\": \"I'm Party A. This is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param.\",\n\t\"groupId\": \"0192f7cb-874e-4610-a9a4-8cad120f0574\",\n\t\"totalLen\": 2,\n\t\"offset\": 0\n}"
+				},
+				"url": {
+					"raw": "localhost:10007/api/param/send-param",
+					"host": [
+						"localhost"
+					],
+					"port": "10007",
+					"path": [
+						"api",
+						"param",
+						"send-param"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Send param] Party A-2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"param\": \"I'm Party AAAAAA. This is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param.\",\n\t\"groupId\": \"0192f7cb-874e-4610-a9a4-8cad120f0574\",\n\t\"totalLen\": 2,\n\t\"offset\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:10007/api/param/send-param",
+					"host": [
+						"localhost"
+					],
+					"port": "10007",
+					"path": [
+						"api",
+						"param",
+						"send-param"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Send param] Party C",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"param\": \"I'm Party C. This is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param.\",\n\t\"groupId\": \"0192f7cb-874e-4610-a9a4-8cad120f0574\",\n\t\"totalLen\": 2,\n\t\"offset\": 0\n}"
+				},
+				"url": {
+					"raw": "localhost:10016/api/param/send-param",
+					"host": [
+						"localhost"
+					],
+					"port": "10016",
+					"path": [
+						"api",
+						"param",
+						"send-param"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Send param] Party C-2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"param\": \"I'm Party CCCCCC. This is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param, this is param.\",\n\t\"groupId\": \"0192f7cb-874e-4610-a9a4-8cad120f0574\",\n\t\"totalLen\": 2,\n\t\"offset\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:10016/api/param/send-param",
+					"host": [
+						"localhost"
+					],
+					"port": "10016",
+					"path": [
+						"api",
+						"param",
+						"send-param"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Send Share] Party A",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"param\": \"AAAAAAAAAAAAAAAAAAAAA DDDDDDDDDDDDDDDDdecrypt SSSSSSSSSSSSSSSSSSSSSSSSSSSSshare.\",\n\t\"groupId\": \"0192f7cb-874e-4610-a9a4-8cad120f0574\",\n\t\"totalLen\": 2,\n\t\"offset\": 0\n}"
+				},
+				"url": {
+					"raw": "localhost:10007/api/param/decrypt-share",
+					"host": [
+						"localhost"
+					],
+					"port": "10007",
+					"path": [
+						"api",
+						"param",
+						"decrypt-share"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Encrypt and upload] Party A",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:10007/api/param/encrypt-upload?filePath=C:\\Users\\lenovo\\Desktop\\deepchain-kotlin\\data\\worker 6\\worker 2.txt&groupId=88e64231-3176-46d8-a176-efc8f3643b60",
+					"host": [
+						"localhost"
+					],
+					"port": "10007",
+					"path": [
+						"api",
+						"param",
+						"encrypt-upload"
+					],
+					"query": [
+						{
+							"key": "filePath",
+							"value": "C:\\Users\\lenovo\\Desktop\\deepchain-kotlin\\data\\worker 6\\worker 2.txt"
+						},
+						{
+							"key": "groupId",
+							"value": "88e64231-3176-46d8-a176-efc8f3643b60"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Encrypt and upload] Party B",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:10010/api/param/encrypt-upload?filePath=C:\\Users\\lenovo\\Desktop\\deepchain-kotlin\\data\\worker 6\\worker 5.txt&groupId=88e64231-3176-46d8-a176-efc8f3643b60",
+					"host": [
+						"localhost"
+					],
+					"port": "10010",
+					"path": [
+						"api",
+						"param",
+						"encrypt-upload"
+					],
+					"query": [
+						{
+							"key": "filePath",
+							"value": "C:\\Users\\lenovo\\Desktop\\deepchain-kotlin\\data\\worker 6\\worker 5.txt"
+						},
+						{
+							"key": "groupId",
+							"value": "88e64231-3176-46d8-a176-efc8f3643b60"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Encrypt and upload] Party C",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:10016/api/param/encrypt-upload?filePath=C:\\Users\\lenovo\\Desktop\\deepchain-kotlin\\data\\worker 6\\worker 4.txt&groupId=88e64231-3176-46d8-a176-efc8f3643b60",
+					"host": [
+						"localhost"
+					],
+					"port": "10016",
+					"path": [
+						"api",
+						"param",
+						"encrypt-upload"
+					],
+					"query": [
+						{
+							"key": "filePath",
+							"value": "C:\\Users\\lenovo\\Desktop\\deepchain-kotlin\\data\\worker 6\\worker 4.txt"
+						},
+						{
+							"key": "groupId",
+							"value": "88e64231-3176-46d8-a176-efc8f3643b60"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Download and mine] Miner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:10013/api/param/download-update?groupId=88e64231-3176-46d8-a176-efc8f3643b60",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10013",
+					"path": [
+						"api",
+						"param",
+						"download-update"
+					],
+					"query": [
+						{
+							"key": "groupId",
+							"value": "88e64231-3176-46d8-a176-efc8f3643b60"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Upload share] Party A",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:10007/api/param/upload-share?groupId=88e64231-3176-46d8-a176-efc8f3643b60",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10007",
+					"path": [
+						"api",
+						"param",
+						"upload-share"
+					],
+					"query": [
+						{
+							"key": "groupId",
+							"value": "88e64231-3176-46d8-a176-efc8f3643b60"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

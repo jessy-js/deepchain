@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "ba552ae1-9d75-4b7c-865f-85e23175af10",
+		"name": "deepchain-kotlin/official",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[Init Paillier] Official",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:10019/api/official/init?groupId=88e64231-3176-46d8-a176-efc8f3643b60",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10019",
+					"path": [
+						"api",
+						"official",
+						"init"
+					],
+					"query": [
+						{
+							"key": "groupId",
+							"value": "88e64231-3176-46d8-a176-efc8f3643b60"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Query alpha and g]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:10019/api/official/vault?groupId=633248ee-d16e-4be8-9f3e-a4893a25fde0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10019",
+					"path": [
+						"api",
+						"official",
+						"vault"
+					],
+					"query": [
+						{
+							"key": "groupId",
+							"value": "633248ee-d16e-4be8-9f3e-a4893a25fde0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Query basic]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:10013/api/official/vault-basic?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10013",
+					"path": [
+						"api",
+						"official",
+						"vault-basic"
+					],
+					"query": [
+						{
+							"key": "groupId",
+							"value": "633248ee-d16e-4be8-9f3e-a4893a25fde0",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Query all txs]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:10019/api/official/all-vault?groupId=12399e98-c9b1-4b66-8f67-38e60c1cd78f",
+					"host": [
+						"localhost"
+					],
+					"port": "10019",
+					"path": [
+						"api",
+						"official",
+						"all-vault"
+					],
+					"query": [
+						{
+							"key": "groupId",
+							"value": "12399e98-c9b1-4b66-8f67-38e60c1cd78f"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

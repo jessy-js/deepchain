@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "a5d55dad-90d7-40b7-bd4d-7e1557574200",
+		"name": "deepchain-info",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[Query participants]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:10010/api/group/participants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10010",
+					"path": [
+						"api",
+						"group",
+						"participants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Query identity]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:10010/api/group/identity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10010",
+					"path": [
+						"api",
+						"group",
+						"identity"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

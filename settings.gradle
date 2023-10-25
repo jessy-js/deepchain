@@ -1,0 +1,3 @@
+include 'deepchain-contracts'
+include 'deepchain-cordapp'
+

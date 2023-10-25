@@ -1,0 +1,45 @@
+# Compiled class file
+*.class
+out
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# IntelliJ Files #
+*.idea
+*.iml
+
+### Gradle ###
+.gradle
+build
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# Database files
+*.DS_Store
+**/.DS_Store
+
+# Run params
+deepchain-cordapp/run/*
+
+# data
+
+data/*

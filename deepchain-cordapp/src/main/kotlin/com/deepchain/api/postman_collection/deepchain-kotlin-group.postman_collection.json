@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "1022c21e-2c76-4a51-a98c-8e29c8598bcf",
+		"name": "deepchain-kotlin/group",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[Get Group]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:10019/api/group/vault?page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10019",
+					"path": [
+						"api",
+						"group",
+						"vault"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Create grpup] Party B",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"miner\": \"Miner\",\n\t\"official\": \"Official\",\n\t\"maxNum\": 5,\n\t\"description\": \"Make me great again!!!\",\n\t\"untilTime\": \"2558629725\"\n}"
+				},
+				"url": {
+					"raw": "localhost:10010/api/group/create-group",
+					"host": [
+						"localhost"
+					],
+					"port": "10010",
+					"path": [
+						"api",
+						"group",
+						"create-group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Join group] Party A",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"groupId\": \"88e64231-3176-46d8-a176-efc8f3643b60\",\n\t\"ownerParty\": \"O=Party B,L=Guangzhou,C=CN\"\n}"
+				},
+				"url": {
+					"raw": "localhost:10007/api/group/join-group",
+					"host": [
+						"localhost"
+					],
+					"port": "10007",
+					"path": [
+						"api",
+						"group",
+						"join-group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Join group] Party C",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"groupId\": \"88e64231-3176-46d8-a176-efc8f3643b60\",\n\t\"ownerParty\": \"O=Party B,L=Guangzhou,C=CN\"\n}"
+				},
+				"url": {
+					"raw": "localhost:10016/api/group/join-group",
+					"host": [
+						"localhost"
+					],
+					"port": "10016",
+					"path": [
+						"api",
+						"group",
+						"join-group"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
